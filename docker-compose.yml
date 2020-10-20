@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: keycloak
+
+  keycloak:
+    build: ./docker
+    env_file:
+      - local.env
+    depends_on:
+      - postgres
+    ports:
+      - 8080:8080

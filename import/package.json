@@ -1,0 +1,14 @@
+{
+  "name": "user-import",
+  "version": "1.0.0",
+  "description": "Import users from legacy DB into Keycloak",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Paolo Campanelli (paolo.campanelli@cngei.it)",
+  "license": "MIT",
+  "dependencies": {
+    "keycloak-admin": "^1.13.0"
+  }
+}
