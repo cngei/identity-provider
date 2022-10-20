@@ -1,0 +1,92 @@
+@import url(https://fonts.bunny.net/css?family=montserrat:300,600,900);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(37,113,72,0.9);
+    color: #eee;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+}
+
+#kc-header {
+    display: none;
+}
+
+.button {
+    background-color: white; /* Green */
+    border: none;
+    color: #257148;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100vw;
+    width: 100%;
+    overflow: hidden;
+}
+
+input {
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+}
+
+input:focus {
+    outline: 2px solid #eee;
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    max-width: 90vw;
+}
+
+label {
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        align-items: start;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+
+#kc-form-buttons {
+    max-width: 90vw;
+    display: flex;
+    justify-content: end;
+}
+
+.cngei-logo {
+    background: url(../img/logo.png) no-repeat center center;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    margin-left: 12px;
+}
+
+#kc-page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#input-error {
+    color: #ffc9b7;
+}
